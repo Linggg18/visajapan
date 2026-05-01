@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ - Velling Guide</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #0a1f44;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #0a1f44;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #cfefff;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: white;
+    }
+
+    /* CONTENT */
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0a1f44;
+    }
+
+    .faq-card {
+      background-color: #0a1f44;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+
+    .faq-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .question {
+      font-weight: bold;
+      color: #cfefff;
+      margin-bottom: 8px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">Velling</div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="visa.html">Visa Japan</a></li>
+    <li><a href="student.html">Student Guide</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+</nav>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <h1>Frequently Asked Questions</h1>
+
+  <div class="faq-card">
+    <div class="question">1. How long does visa processing take?</div>
+    <div>Usually 5–7 working days, depending on your documents.</div>
+  </div>
+
+  <div class="faq-card">
+    <div class="question">2. Do I need to go in person?</div>
+    <div>Yes, applicants must submit documents directly to the office.</div>
+  </div>
+
+  <div class="faq-card">
+    <div class="question">3. Can I use printed or digital documents?</div>
+    <div>Only printed A4 documents are accepted.</div>
+  </div>
+
+  <div class="faq-card">
+    <div class="question">4. What if my documents are incomplete?</div>
+    <div>Your application may be delayed or rejected.</div>
+  </div>
+
+  <div class="faq-card">
+    <div class="question">5. Where do I apply?</div>
+    <div>You can apply in Taipei or Kaohsiung office depending on your ARC address.</div>
+  </div>
+
+</div>
+
+</body>
+</html>
