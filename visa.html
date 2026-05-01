@@ -47,15 +47,19 @@
       color: white;
     }
 
+    /* TRANSLATE */
+    #google_translate_element {
+      margin: 10px 20px;
+    }
+
     /* CONTENT */
     .container {
+      padding: 40px;
       max-width: 900px;
       margin: auto;
-      padding: 40px 20px;
     }
 
     h1 {
-      text-align: center;
       color: #0a1f44;
     }
 
@@ -80,8 +84,8 @@
 
     .note {
       background: #e6f0ff;
-      border-left: 5px solid #0a1f44;
       padding: 15px;
+      border-left: 5px solid #0a1f44;
       margin-top: 20px;
     }
 
@@ -94,7 +98,7 @@
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAVBAR (CONNECT SEMUA PAGE) -->
 <nav>
   <div class="logo">Velling</div>
 
@@ -106,11 +110,13 @@
   </ul>
 </nav>
 
-<!-- CONTENT -->
+<!-- TRANSLATE -->
+<div id="google_translate_element"></div>
+
 <div class="container">
 
   <h1>Visa Japan Guide</h1>
-  <p style="text-align:center;">Step-by-step tutorial for Japan visa application</p>
+  <p>Step-by-step guide for Japan visa application.</p>
 
   <!-- LINKS -->
   <h2>📍 Official Links</h2>
@@ -120,42 +126,55 @@
     <p><a href="https://share.google/kW5kfaEt1ypqF3CvW" target="_blank">Kaohsiung Office Location</a></p>
   </div>
 
-  <!-- REQUIREMENTS -->
+  <!-- DOCUMENTS -->
   <h2>📄 Required Documents</h2>
   <div class="card">
     1. Visa application form<br>
     2. Passport photo (white background)<br>
     3. Passport (original + copy)<br>
     4. Entry/Exit certificate<br>
-    5. ARC (original + copy)<br>
-    6. Re-entry permit<br>
-    7. Certificate of enrollment<br>
-    8. Bank statement<br>
-    9. Travel schedule<br>
-    10. Flight booking<br>
-    11. Hotel reservation
+    5. ARC (if applicable)<br>
+    6. Bank statement<br>
+    7. Travel itinerary<br>
+    8. Flight booking<br>
+    9. Hotel reservation
   </div>
 
-  <!-- STEPS -->
+  <!-- PROCESS -->
   <h2>🧭 Step by Step Process</h2>
   <div class="card">
-    Step 1: Prepare all documents<br>
-    Step 2: Fill visa application form<br>
-    Step 3: Go to Taipei or Kaohsiung office<br>
+    Step 1: Prepare documents<br>
+    Step 2: Fill application form<br>
+    Step 3: Go to embassy office<br>
     Step 4: Submit documents<br>
     Step 5: Wait for approval
   </div>
 
-  <!-- IMPORTANT -->
+  <!-- NOTES -->
   <h2>⚠️ Important Notes</h2>
   <div class="note">
     • Use A4 paper only<br>
     • Do NOT staple documents<br>
     • No pencil or erasable pen<br>
-    • Additional documents may be required
+    • Extra documents may be requested
   </div>
 
 </div>
+
+<!-- TRANSLATE SCRIPT -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,id,ja,zh-CN,zh-TW',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 
 </body>
 </html>
