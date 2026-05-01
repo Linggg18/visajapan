@@ -2,40 +2,160 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Visa Japan Guide</title>
+  <title>Visa Japan Guide - Velling</title>
 
   <style>
     body {
       margin: 0;
-      font-family: Arial;
-      background: linear-gradient(to bottom, #0a1f44, #6fb6ff, #cfefff);
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #0a1f44;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #0a1f44;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
       color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #cfefff;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: white;
+    }
+
+    /* CONTENT */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #0a1f44;
       text-align: center;
     }
 
-    .box {
-      margin-top: 80px;
-      background: rgba(255,255,255,0.15);
-      padding: 25px;
-      border-radius: 15px;
-      display: inline-block;
+    h2 {
+      margin-top: 30px;
+      color: #0a1f44;
+    }
+
+    .card {
+      background-color: #0a1f44;
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .note {
+      background: #e6f0ff;
+      border-left: 5px solid #0a1f44;
+      padding: 15px;
+      margin-top: 20px;
     }
 
     a {
-      color: white;
-      text-decoration: none;
+      color: #1a73e8;
     }
+
   </style>
 </head>
 
 <body>
 
-  <div class="box">
-    <h1>Visa Japan Tutorial</h1>
-    <p>Step-by-step guide will be here.</p>
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">Velling</div>
 
-    <a href="index.html">← Back to Home</a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="visa.html">Visa Japan</a></li>
+    <li><a href="student.html">Student Guide</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+</nav>
+
+<!-- CONTENT -->
+<div class="container">
+
+  <h1>Visa Japan Guide</h1>
+  <p style="text-align:center;">Step-by-step tutorial for Japan visa application</p>
+
+  <!-- INTRO -->
+  <h2>📍 Official Links</h2>
+  <div class="card">
+    <p><a href="https://www.koryu.or.jp/en/visa/taipei/" target="_blank">Official Japan Visa Website</a></p>
+    <p><a href="https://share.google/TiLBJ0eVM4e1b7GIJ" target="_blank">Taipei Office Location</a></p>
+    <p><a href="https://share.google/kW5kfaEt1ypqF3CvW" target="_blank">Kaohsiung Office Location</a></p>
   </div>
+
+  <!-- REQUIREMENTS -->
+  <h2>📄 Required Documents</h2>
+  <div class="card">
+    1. Visa application form<br>
+    2. Passport photo (white background)<br>
+    3. Passport (original + copy)<br>
+    4. Entry/Exit certificate<br>
+    5. ARC (original + copy)<br>
+    6. Re-entry permit<br>
+    7. Certificate of enrollment<br>
+    8. Bank statement<br>
+    9. Travel schedule<br>
+    10. Flight booking<br>
+    11. Hotel reservation
+  </div>
+
+  <!-- STEPS -->
+  <h2>🧭 Step by Step Process</h2>
+  <div class="card">
+    Step 1: Prepare all documents<br>
+    Step 2: Fill visa application form<br>
+    Step 3: Go to Taipei or Kaohsiung office<br>
+    Step 4: Submit documents<br>
+    Step 5: Wait for approval
+  </div>
+
+  <!-- IMPORTANT -->
+  <h2>⚠️ Important Notes</h2>
+  <div class="note">
+    • Use A4 paper only<br>
+    • Do NOT staple documents<br>
+    • No pencil or erasable pen<br>
+    • Additional documents may be required
+  </div>
+
+</div>
 
 </body>
 </html>
