@@ -5,6 +5,15 @@
   <title>Velling Tutorial Guide</title>
 
   <style>
+    /* 🌐 GLOBAL */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #0a1f44;
+    }
+
+    /* 🌐 NAVBAR */
     nav {
       display: flex;
       justify-content: space-between;
@@ -40,41 +49,47 @@
       color: white;
     }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #0a1f44, #6fb6ff, #cfefff);
-      color: white;
-    }
-
+    /* 📦 SECTION */
     .container {
       text-align: center;
-      padding: 80px 20px;
+      padding: 70px 20px;
     }
 
     h1 {
       font-size: 42px;
+      color: #0a1f44;
     }
 
     p {
-      font-size: 20px;
-      color: #eaf6ff;
+      font-size: 18px;
+      color: #333;
     }
 
+    /* 🟦 BOX NAVY */
     .box {
-      margin-top: 40px;
-      background: rgba(255,255,255,0.15);
+      margin-top: 30px;
+      background-color: #0a1f44;
+      color: white;
       padding: 25px;
       border-radius: 15px;
       display: inline-block;
-      backdrop-filter: blur(5px);
+      max-width: 500px;
+    }
+
+    .box h2 {
+      color: #cfefff;
+    }
+
+    /* 🌍 TRANSLATE */
+    #google_translate_element {
+      margin: 10px 20px;
     }
   </style>
 </head>
 
 <body>
 
-<!-- 🌍 NAVBAR -->
+<!-- NAVBAR -->
 <nav>
   <div class="logo">Velling</div>
 
@@ -85,7 +100,7 @@
   </ul>
 </nav>
 
-<!-- 🌍 TRANSLATE -->
+<!-- TRANSLATE -->
 <div id="google_translate_element"></div>
 
 <!-- HOME -->
@@ -103,7 +118,7 @@
 <div id="visa" class="container">
   <div class="box">
     <h2>Visa Japan Tutorial</h2>
-    <p>Here you will learn step-by-step visa process.</p>
+    <p>Step-by-step guide for Japan visa application.</p>
   </div>
 </div>
 
@@ -115,6 +130,7 @@
   </div>
 </div>
 
+<!-- TRANSLATE SCRIPT -->
 <script type="text/javascript">
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({
