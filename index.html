@@ -5,7 +5,6 @@
   <title>Velling Tutorial Guide</title>
 
   <style>
-    /* 🌐 GLOBAL */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -13,7 +12,7 @@
       color: #0a1f44;
     }
 
-    /* 🌐 NAVBAR */
+    /* NAVBAR */
     nav {
       display: flex;
       justify-content: space-between;
@@ -42,22 +41,26 @@
       text-decoration: none;
       color: #cfefff;
       font-weight: 500;
-      transition: 0.3s;
     }
 
     nav ul li a:hover {
       color: white;
     }
 
-    /* 📦 SECTION */
-    .container {
+    /* TRANSLATE */
+    #google_translate_element {
+      margin: 10px 20px;
+    }
+
+    /* HERO */
+    .hero {
       text-align: center;
-      padding: 70px 20px;
+      padding: 60px 20px;
     }
 
     h1 {
-      font-size: 42px;
-      color: #0a1f44;
+      font-size: 40px;
+      margin-bottom: 10px;
     }
 
     p {
@@ -65,25 +68,39 @@
       color: #333;
     }
 
-    /* 🟦 BOX NAVY */
-    .box {
-      margin-top: 30px;
+    /* MENU CARDS */
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      width: 200px;
+      padding: 25px;
       background-color: #0a1f44;
       color: white;
-      padding: 25px;
       border-radius: 15px;
-      display: inline-block;
-      max-width: 500px;
+      text-align: center;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 18px;
     }
 
-    .box h2 {
-      color: #cfefff;
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      background-color: #123a7a;
     }
 
-    /* 🌍 TRANSLATE */
-    #google_translate_element {
-      margin: 10px 20px;
+    .icon {
+      font-size: 30px;
+      display: block;
+      margin-bottom: 10px;
     }
+
   </style>
 </head>
 
@@ -94,43 +111,43 @@
   <div class="logo">Velling</div>
 
   <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#visa">Visa Japan</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="visa.html">Visa Japan</a></li>
+    <li><a href="student.html">Student Guide</a></li>
+    <li><a href="faq.html">FAQ</a></li>
   </ul>
 </nav>
 
 <!-- TRANSLATE -->
 <div id="google_translate_element"></div>
 
-<!-- HOME -->
-<div id="home" class="container">
+<!-- HERO -->
+<div class="hero">
   <h1>Welcome to Velling</h1>
   <p>Your Simple Tutorial Guide</p>
 
-  <div class="box">
-    <h2>Tutorial Section</h2>
-    <p>This is where your Visa Japan or other tutorials will go.</p>
+  <!-- MENU ICON CARDS -->
+  <div class="menu">
+
+    <a class="card" href="visa.html">
+      <span class="icon">🛂</span>
+      Visa Japan
+    </a>
+
+    <a class="card" href="student.html">
+      <span class="icon">🎓</span>
+      Student Guide
+    </a>
+
+    <a class="card" href="faq.html">
+      <span class="icon">❓</span>
+      FAQ
+    </a>
+
   </div>
 </div>
 
-<!-- VISA -->
-<div id="visa" class="container">
-  <div class="box">
-    <h2>Visa Japan Tutorial</h2>
-    <p>Step-by-step guide for Japan visa application.</p>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<div id="about" class="container">
-  <div class="box">
-    <h2>About</h2>
-    <p>This website is created by Velling for simple learning guides.</p>
-  </div>
-</div>
-
-<!-- TRANSLATE SCRIPT -->
+<!-- GOOGLE TRANSLATE SCRIPT -->
 <script type="text/javascript">
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({
