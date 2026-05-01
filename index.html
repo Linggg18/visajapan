@@ -8,8 +8,8 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, white, #4da3ff);
-      color: #333;
+      background: linear-gradient(to bottom, #0a1f44, #6fb6ff, #cfefff);
+      color: white;
     }
 
     .container {
@@ -18,26 +18,29 @@
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 42px;
+      color: #ffffff;
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
+      color: #eaf6ff;
     }
 
     .box {
       margin-top: 40px;
-      background: rgba(255,255,255,0.8);
-      padding: 20px;
-      border-radius: 12px;
+      background: rgba(255,255,255,0.15);
+      padding: 25px;
+      border-radius: 15px;
       display: inline-block;
+      backdrop-filter: blur(5px);
     }
   </style>
 </head>
 
 <body>
 
-  <!-- 🌍 Google Translate -->
+  <!-- 🌍 Translate -->
   <div id="google_translate_element"></div>
 
   <div class="container">
@@ -45,12 +48,11 @@
     <p>Your Simple Tutorial Guide</p>
 
     <div class="box">
-      <h2>Tutorial 1</h2>
-      <p>Ini adalah tempat kamu bisa menulis tutorial Visa Japan atau lainnya.</p>
+      <h2>Tutorial Section</h2>
+      <p>This is where your Visa Japan or other tutorials will go.</p>
     </div>
   </div>
 
-  <!-- Script Google Translate -->
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
